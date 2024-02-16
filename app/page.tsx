@@ -1,6 +1,9 @@
+'use client'
 import React from 'react';
 import Image from "next/image";
 import {TextGenerateEffect} from "@/components/ui/text-generate-effect";
+import { LampContainer } from '@/components/ui/lamb';
+import { motion } from 'framer-motion';
 
 const words = 'We are currently working hard on an awesome new website design. Stay tuned for the big reveal!';
 
@@ -24,7 +27,28 @@ function Page() {
                     <div className={'absolute bg-black text-white text-lg py-4 w-[150%] bottom-32 -left-5 -rotate-12 text-nowrap'}>coming soon. stay tuned coming soon. stay tuned coming soon. stay tuned coming soon. stay tuned coming soon. stay tuned</div>
                 </div>
                 <div className={'bg-orange-500 rounded-xl'}></div>
-                <div className={'bg-pink-500 rounded-xl'}></div>
+                <div className={'rounded-2xl overflow-hidden'}>
+                    <LampContainer>
+                        <motion.h1
+                            initial={{ opacity: 0.5, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                                delay: 0.3,
+                                duration: 0.8,
+                                ease: "easeInOut",
+                            }}
+                            className="bg-gradient-to-br from-slate-100 to-slate-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                        >
+                            <h2 className={'text-6xl font-semibold'}>
+                                Let&apos;s Talk
+                            </h2>
+
+                            <a href={'mailto:hello@shipventures.io'} className={'text-6xl decoration-dashed'}>
+                                hello@shipventures.io
+                            </a>
+                        </motion.h1>
+                    </LampContainer>
+                </div>
             </main>
         </>
     );
