@@ -98,4 +98,14 @@
   /*  background-position: center;*/
   /*  background-size: cover;*/
   /*}*/
+
+  .gradient-noise {
+    background-image: url("/gradient.png");
+    background-size: cover;
+    background-position: left;
+  }
+
+  .height-full {
+    height: calc(100vh - 64px);
+  }
 }

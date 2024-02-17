@@ -32,9 +32,10 @@ export const TextGenerateEffect = ({
                     return (
                         <motion.span
                             key={word + idx}
-                            className="dark:text-white text-black opacity-0"
+                            className="opacity-0"
                         >
-                            {word}{" "}
+                            {word.startsWith("^") ?<b>{word.substring(1)}</b> : word}
+                           {" "}
                         </motion.span>
                     );
                 })}
@@ -43,12 +44,10 @@ export const TextGenerateEffect = ({
     };
 
     return (
-        <div className={cn("font-bold", className)}>
-            <div className="mt-4">
-                <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
+        <div className={cn(className)}>
+                <h1 className="text-White text-5xl text-white leading-tight" aria-label={"words"}>
                     {renderWords()}
-                </div>
-            </div>
+                </h1>
         </div>
     );
 };
