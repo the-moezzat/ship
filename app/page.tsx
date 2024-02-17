@@ -14,13 +14,13 @@ function Page() {
                 <Image src={'/logo.svg'} alt={'logo'} width={120} height={100}/>
             </header>
             <main className={'max-w-[1480px] mx-auto p-4 grid grid-cols-2 grid-rows-2 height-full gap-4 max-md:grid-cols-1 max-md:grid-rows-1 max-md:h-full'}>
-                <div className={'noise  row-span-2 rounded-3xl p-4'}>
+                <div className={'noise md:row-span-2 rounded-2xl md:rounded-3xl md:p-4 p-2 '}>
                     <ComingSoon/>
                 </div>
                 <div className={'bg-orange-500 rounded-3xl gradient-noise p-4'}>
                     <About/>
                 </div>
-                <div className={'rounded-3xl overflow-hidden'}>
+                <div className={'rounded-3xl overflow-hidden '}>
                     <Connect/>
                 </div>
             </main>
