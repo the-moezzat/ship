@@ -12,11 +12,11 @@ function ComingSoon() {
             </div>
 
             <div
-                className={'absolute bg-black text-white text-base md:text-lg py-4 w-[120%] max-sm:bottom-20 bottom-32 -left-5 max-sm:rotate-12 rotate-6'}>
+                className={'absolute bg-black text-white text-base md:text-lg py-4 w-[115%] max-sm:bottom-20 bottom-32 -left-5 max-sm:rotate-12 rotate-6'}>
                 <InfiniteMovingCards items={['coming soon. stay tuned', 'coming soon. stay tuned', 'coming soon. stay tuned']} speed={'normal'} pauseOnHover={false} direction={'right'} className={''}/>
             </div>
             <div
-                className={'absolute bg-black text-white text-base md:text-lg py-4 w-[120%] max-sm:bottom-20 bottom-28 -left-5 -rotate-12'}>
+                className={'absolute bg-black text-white text-base md:text-lg py-4 w-[115%] max-sm:bottom-20 bottom-28 -left-5 -rotate-12'}>
                 <InfiniteMovingCards items={['Web Development', 'Mobile Development', 'UI/UX', 'Top-notch software engineers']} speed={'normal'} pauseOnHover={false} direction={'right'} className={''}/>
 
             </div>
