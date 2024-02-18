@@ -13,10 +13,10 @@ function About() {
             <div className={'mt-auto opacity-75 flex flex-col gap-3 pt-4'}>
                 <h3>Follow us</h3>
                 <div className={'flex gap-2'}>
-                    <a href={'https://twitter.com/shipventuresio'} className={'w-8 h-8 flex items-center justify-center rounded-full border transition-all hover:bg-white hover:text-black'} ><Twitter size={14} /></a>
-                    <a href={'https://www.linkedin.com/company/shipventuresio'} className={'w-8 h-8 flex items-center justify-center rounded-full border'} ><Linkedin size={14} /></a>
-                    <a href={'#'} className={'w-8 h-8 flex items-center justify-center rounded-full border'}><Instagram size={14}   /></a>
-                    <a href={'#'} className={'w-8 h-8 flex items-center justify-center rounded-full border'}><Facebook size={14}   /></a>
+                    <a href={'https://twitter.com/shipVentures'} target={'_blank'} className={'w-8 h-8 flex items-center justify-center rounded-full border transition-all hover:bg-white hover:text-black'} ><Twitter size={14} /></a>
+                    <a href={'https://www.linkedin.com/company/shipventures'} target={'_blank'} className={'w-8 h-8 flex items-center justify-center rounded-full border'} ><Linkedin size={14} /></a>
+                    <a href={'https://www.instagram.com/shipventures/'} target={'_blank'} className={'w-8 h-8 flex items-center justify-center rounded-full border'}><Instagram size={14}   /></a>
+                    <a href={'https://www.facebook.com/profile.php?id=61555465277176'} target={'_blank'} className={'w-8 h-8 flex items-center justify-center rounded-full border'}><Facebook size={14}   /></a>
                 </div>
             </div>
         </div>
