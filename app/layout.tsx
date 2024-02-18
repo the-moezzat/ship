@@ -1,7 +1,9 @@
-import type {Metadata, Viewport} from "next";
-import { Inter, Titillium_Web } from "next/font/google";
+import type {Viewport} from "next";
+import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import {getSEOTags} from "@/lib/seo";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const fontSans = Titillium_Web({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
@@ -70,6 +72,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={fontSans.className}>{children}</body>
+      <Analytics />
+
     </html>
   );
 }
