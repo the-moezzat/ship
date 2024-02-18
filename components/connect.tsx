@@ -17,12 +17,12 @@ function Connect() {
                         duration: 0.8,
                         ease: "easeInOut",
                     }}
-                    className="bg-gradient-to-br from-slate-100 to-slate-300 py-4 bg-clip-text text-center  text-4xl font-semibold tracking-tight text-transparent md:text-7xl"
+                    className="bg-gradient-to-br from-slate-100 to-slate-300 py-4 bg-clip-text text-center  text-4xl font-semibold tracking-tight text-transparent md:text-5xl lg:text-6xl"
                 >
                     Let&apos;s Talk
 
 
-                    <Link href={'mailto:hello@shipventures.io'} className={'text-3xl md:text-6xl font-normal block mt-4  underline'}>
+                    <Link href={'mailto:hello@shipventures.io'} className={'text-3xl md:text-4xl lg:text-5xl font-normal block mt-4  underline'}>
                         hello@shipventures.io
                     </Link>
                 </motion.h2>

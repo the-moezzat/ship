@@ -45,7 +45,7 @@ export const TextGenerateEffect = ({
 
     return (
         <div className={cn(className)}>
-                <h1 className="text-White text-3xl sm:text-4xl md:text-5xl text-white leading-tight" aria-label={"words"}>
+                <h1 className="text-White text-3xl sm:text-4xl lg:text-5xl text-white leading-tight" aria-label={"words"}>
                     {renderWords()}
                 </h1>
         </div>
