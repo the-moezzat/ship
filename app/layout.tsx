@@ -3,6 +3,7 @@ import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import {getSEOTags} from "@/lib/seo";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const fontSans = Titillium_Web({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -73,7 +74,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={fontSans.className}>{children}</body>
       <Analytics />
-
+      <SpeedInsights/>
     </html>
   );
 }
